@@ -3,9 +3,50 @@ layout: default
 title: axiomabsolute
 ---
 
-
-<ul class="posts">
 {% for post in site.posts %}
-	<li>{{ post.date | date_to_string }}<a href="{{ post.url }}">{{ post.title }}</a></li>
+
+<div class="row">
+	<div class="small-12 large-8 columns">
+		<h3> <a href="{{ post.url }}">{{ post.title }}</a> </h3>
+	</div>
+	<div class="small-12 large-4 columns">
+		<div class="post-date">{{ post.date | date_to_string }}</div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 large-8 columns">
+		{% if post.content contains '<!-- excerpt-begin -->' && post.content contains '<!-- excerpt-end -->' %}
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<p><em>excert</em></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					{{ post.content | split: '<!-- excerpt-begin -->' | last | split: '<!-- excerpt-end -->' | first }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<p><em><a href="{{ post.url }}">full article</a></em></p>
+				</div>
+			</div>
+		{% else %}
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					{% if post.truncate %}
+						<p>{{ post.content | truncatewords: post.truncate }}</p>
+					{% else %}
+						<p>{{ post.excerpt }}</p>
+					{% endif %}
+					<em><a href="{{ post.url }}">continue...</a></em></p>
+				</div>
+			</div>
+		{% endif %}
+		{% if forloop.index != forloop.length %}
+			<hr/>
+		{% endif %}
+	</div>
+</div>
+
 {% endfor %}
-</ul>

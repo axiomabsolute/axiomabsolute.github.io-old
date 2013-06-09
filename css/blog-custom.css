@@ -1,0 +1,14 @@
+.post-date {
+	font-style: italic;
+	margin-top: 5px;
+}
+
+.highlight {
+	padding-bottom: 20px;
+	max-width: 62.5em;
+}
+
+.highlight pre {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
