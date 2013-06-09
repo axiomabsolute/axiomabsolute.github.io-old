@@ -12,3 +12,11 @@
 	overflow-x: auto;
 	overflow-y: hidden;
 }
+
+.main-content .row {
+	background-color: #eceae0;
+}
+
+body {
+	background-color: #221e1d;
+}
