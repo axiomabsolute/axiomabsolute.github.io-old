@@ -1,0 +1,9 @@
+# Colors:
+
+Dark: 221e1d
+Medium: 6B6A66
+Light: eceae0
+Bold Blue: 1c9daa
+Accent orange: e9643d
+Cool Blue: 82b4b7
+Accent green: 88b788

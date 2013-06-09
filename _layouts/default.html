@@ -1,3 +1,20 @@
-<link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" />
+<html>
+	<head>
+		<link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/css/foundation.css" />
 
-{{ content }}
+		<script src="/js/vendor/custom.modernizr.js"></script>
+	</head>
+
+	<body>
+
+		{{ content }}
+
+		<script src="/js/vendor/jquery.js"></script>
+		<script src="/js/foundation.min.js"></script>
+
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>
