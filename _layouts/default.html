@@ -8,9 +8,24 @@
 	</head>
 
 	<body>
-
-		<div style="height: 200px">
-
+		<div class="navbar contain-to-grid sticky">
+			<nav class="top-bar">
+			  <ul class="title-area">
+			    <!-- Title Area -->
+			    <li class="name">
+			      <h1><a href="/">AxiomAbsolute</a></h1>
+			    </li>
+			    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+			    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			  </ul>
+			   <section class="top-bar-section">
+			    <!-- Left Nav Section -->
+			    <ul class="left">
+			      <li class="divider"></li>
+			      <li class="active"><a href="{{ site.posts.first.url }}">Most Recent</a></li>
+			      <li class="divider"></li>
+			  </ul>
+			</nav>
 		</div>
 
 		<div class="main-content">
