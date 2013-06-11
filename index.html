@@ -6,21 +6,16 @@ title: axiomabsolute
 {% for post in site.posts %}
 
 <div class="row">
-	<div class="small-12 large-8 columns">
+	<div class="small-12 large-10 columns">
 		<h3> <a href="{{ post.url }}">{{ post.title }}</a> </h3>
 	</div>
-	<div class="small-12 large-4 columns">
+	<div class="small-12 large-2 columns">
 		<div class="post-date">{{ post.date | date_to_string }}</div>
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 large-8 columns">
+	<div class="small-12 large-10 columns">
 		{% if post.content contains '<!-- excerpt-begin -->' && post.content contains '<!-- excerpt-end -->' %}
-			<div class="row">
-				<div class="small-12 large-12 columns">
-					<p><em>excert</em></p>
-				</div>
-			</div>
 			<div class="row">
 				<div class="small-12 large-12 columns">
 					{{ post.content | split: '<!-- excerpt-begin -->' | last | split: '<!-- excerpt-end -->' | first }}
