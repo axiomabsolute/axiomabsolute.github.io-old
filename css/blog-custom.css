@@ -20,22 +20,22 @@
 
 	/* Background Gradient */
 	/* IE10 Consumer Preview */ 
-	background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #ECEAE0 100%);
+	background-image: -ms-linear-gradient(top left, #FBFCF2 0%, #FEFFD9 100%);
 
 	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #ECEAE0 100%);
+	background-image: -moz-linear-gradient(top left, #FBFCF2 0%, #FEFFD9 100%);
 
 	/* Opera */ 
-	background-image: -o-linear-gradient(top left, #FFFFFF 0%, #ECEAE0 100%);
+	background-image: -o-linear-gradient(top left, #FBFCF2 0%, #FEFFD9 100%);
 
 	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #ECEAE0));
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FBFCF2), color-stop(1, #FEFFD9));
 
 	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #ECEAE0 100%);
+	background-image: -webkit-linear-gradient(top left, #FBFCF2 0%, #FEFFD9 100%);
 
 	/* W3C Markup, IE10 Release Preview */ 
-	background-image: linear-gradient(to bottom right, #FFFFFF 0%, #ECEAE0 100%);
+	background-image: linear-gradient(to bottom right, #FBFCF2 0%, #FEFFD9 100%);
 }
 
 body {
