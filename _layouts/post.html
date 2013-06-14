@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 
@@ -16,3 +17,8 @@ layout: default
 		{{ content }}
 	</div>
 </div>
+
+<!-- Code to load Discus comments -->
+{% if page.comments %}
+    {% include disqus.partial %}
+{% endif %}
