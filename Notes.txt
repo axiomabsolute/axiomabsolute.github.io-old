@@ -7,3 +7,8 @@ Bold Blue: 1c9daa
 Accent orange: e9643d
 Cool Blue: 82b4b7
 Accent green: 88b788
+
+# To do
+
+1. Make a more formal way of loading custom CSS into posts (i.e. provide a single item, or an array, look in css folder)
+2. Write up a conclusion to the css post, rename, and move the page.

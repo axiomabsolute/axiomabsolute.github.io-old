@@ -1,0 +1,43 @@
+.flex-container, #ordered ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* Make it a flexrow */
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+  -webkit-align-items: left;
+  -moz-align-items: left;
+  -ms-align-items: left;
+  align-items: left;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* Define what it means to be a flex item */
+.flex-item, #ordered ul li {
+  -webkit-order: 0;
+  -moz-order: 0;
+  -ms-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -moz-align-self: auto;
+  -ms-align-self: auto;
+  align-self: auto;
+}
+/* Make the UL a flex-container */
+/* Now, change the ordering! */
+#ordered .about-nav-link {
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  order: 1;
+}

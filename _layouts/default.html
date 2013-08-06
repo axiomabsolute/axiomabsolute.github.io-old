@@ -3,6 +3,11 @@
 		<link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="/css/foundation.css" />
 		<link rel="stylesheet" href="/css/blog-custom.css" />
+		{% if page.post-custom-css %}
+		  {% for customCss in page.post-custom-css %}
+		    <link rel="stylesheet" href="/css/{{ customCss }}" />
+	      {% endfor %}
+	    {% endif %}
 
 		<script src="/js/vendor/custom.modernizr.js"></script>
 	</head>
