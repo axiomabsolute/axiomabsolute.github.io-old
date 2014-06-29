@@ -3,3 +3,4 @@ comments :
   disqus :
     short_name : axiomabsolute
 pygments: false
+markdown: kramdown
