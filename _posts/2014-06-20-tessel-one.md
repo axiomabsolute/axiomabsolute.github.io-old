@@ -1,4 +1,9 @@
-# Getting Started with Tessel
+---
+layout: post
+title: Getting Started with Tessel
+truncate: 80
+---
+
 #### *A programmer’s foray into embedded systems*
 
 I’m a software guy.  I’ve taken the requisite college classes and understand how the programs I write eventually compile down to machine instructions and how they’re executed on the underlying hardware, but the idea of working directly with embedded systems for side projects at home has always been a little daunting.  I haven’t touched C, C++, or similarly low-level languages in several years, and haven’t had much cause in my professional work to look into embedded devices, but learning to work on these types of platforms has always had a kind of mysterious allure for me.
@@ -11,15 +16,15 @@ I’m sure hardcore embedded system developers are frothing in outrage, and I’
 
 One of the biggest hassles with embedded devices is getting the environment up and running; the drivers, compiler, programming environment, not to mention getting the individual components and getting them to work with one another.  I decided to take my first crack at working with Tessel on a Windows machine; my desktop gaming computer I use at home.  First step, go to the Tessel site and install the command line utility for working with the system; a simple node.js package
 
-```
+{% highlight sh linenos %}
 npm install -g https://builds.tessel.io/cli/tessel-cli-current.tar.gz
-```
+{% endhighlight %}
 
 All that’s left is to plug it in an test out the command line utility by ensuring that the software on the Tessel board is up to date.  After a couple of minutes, where Windows fetches the appropriate drivers and installs them automatically, I’m ready to run my first Tessel command:
 
-```
+{% highlight sh linenos %}
 tessel update
-```
+{% endhighlight %}
 
 Success!  The online tutorial quickly introduces what I suspect is the microcontroller equivalent to “Hello, world” - making some LEDs blink.
 
@@ -29,9 +34,9 @@ The Tessel consists of a single, base board (which has our “Hello, World” LE
 
 One nice thing to note, the name of each module is printed directly on the board of the component, which corresponds exactly with both the NPM package used to interface with that particular module as well as a named GitHub repository hosting documentation and examples.  For instance, one of the sensors is capable of detecting ambient light and sound (in the form of coarse luminosity and decibel readings) and is called, appropriately, the ambient module.   The name of the component, ambient-attx4, is printed directly on the module, making getting started with the module as easy as
 
-```
+{% highlight sh linenos %}
 npm install ambient-attx4
-```
+{% endhighlight %}
 
 and clicking on the link to [tessel/ambient-attx4](https://github.com/tessel/ambient-attx4) on GitHub. 
 
