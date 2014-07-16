@@ -16,13 +16,13 @@ I’m sure hardcore embedded system developers are frothing in outrage, and I’
 
 One of the biggest hassles with embedded devices is getting the environment up and running; the drivers, compiler, programming environment, not to mention getting the individual components and getting them to work with one another.  I decided to take my first crack at working with Tessel on a Windows machine; my desktop gaming computer I use at home.  First step, go to the Tessel site and install the command line utility for working with the system; a simple node.js package
 
-{% highlight sh linenos %}
+{% highlight sh %}
 npm install -g https://builds.tessel.io/cli/tessel-cli-current.tar.gz
 {% endhighlight %}
 
 All that’s left is to plug it in an test out the command line utility by ensuring that the software on the Tessel board is up to date.  After a couple of minutes, where Windows fetches the appropriate drivers and installs them automatically, I’m ready to run my first Tessel command:
 
-{% highlight sh linenos %}
+{% highlight sh %}
 tessel update
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ The Tessel consists of a single, base board (which has our “Hello, World” LE
 
 One nice thing to note, the name of each module is printed directly on the board of the component, which corresponds exactly with both the NPM package used to interface with that particular module as well as a named GitHub repository hosting documentation and examples.  For instance, one of the sensors is capable of detecting ambient light and sound (in the form of coarse luminosity and decibel readings) and is called, appropriately, the ambient module.   The name of the component, ambient-attx4, is printed directly on the module, making getting started with the module as easy as
 
-{% highlight sh linenos %}
+{% highlight sh %}
 npm install ambient-attx4
 {% endhighlight %}
 
